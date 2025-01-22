@@ -1,0 +1,68 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+/* Custom */
+.board {
+  display: flex;
+  overflow-y: auto;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.column {
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.cards {
+  padding: 8px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.card {
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
